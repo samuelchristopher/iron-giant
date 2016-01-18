@@ -1,0 +1,237 @@
+.iron-giant
+  height: 400px
+  width: 300px
+  background: pink
+  position: relative
+
+  +e('left-ear')
+    background: $dark-black
+    width: 10px
+    height: 30px
+    position: absolute
+    bottom: 190px
+    border-left: 10px solid $stroke
+
+    +m('top')
+      background: $stroke
+      width: 10px
+      height: 20px
+      position: absolute
+      top: -8px
+      left: -2px
+      transform: rotate(75deg)
+
+    +m('bottom')
+      background: $stroke
+      width: 10px
+      height: 20px
+      position: absolute
+      bottom: -8px
+      left: -4px
+      transform: rotate(-85deg)
+
+  +e('left-ear-border-container')
+    height: 30px
+    width: 10px
+    // background-color: darken(pink, 20%)
+    position: relative
+
+
+  +e('left-jaw')
+    background: $dark-black
+    width: 20px
+    height: 150px
+    border-left: 10px solid $stroke
+    border-top: 10px solid $stroke
+    position: absolute
+    top: 150px
+    left: 20px
+
+    +m('black')
+      background: $black
+
+    +m('highlight')
+      // @extend .iron-giant__left-ear
+      width: 40%
+      height: 100%
+      background: $light-black
+
+  +e('right-ear')
+    @extend .iron-giant__left-ear
+    right: 0
+    transform: rotate(180deg)
+    background: $black
+
+    +m('bottom')
+      @extend .iron-giant__left-ear--bottom
+
+    +m('top')
+      @extend .iron-giant__left-ear--top
+
+    +m('highlight')
+      width: 5px
+      height: 100%
+      background: $light-black
+      z-index: 3
+
+  +e('right-ear-border-container')
+    @extend .iron-giant__left-ear-border-container
+
+  +e('center-jaw')
+    height: 90px
+    width: 240px
+    position: absolute
+    // background: darken(pink, 20%)
+    bottom: 30px
+    left: 20px
+    border-radius: 0 0 60px 60px
+    border-right: 10px solid $stroke
+    border-left: 10px solid $stroke
+    border-bottom: 10px solid $stroke
+    overflow: hidden
+
+    +m('inner')
+      position: relative
+    +m('stroke1')
+      width: 10px
+      height: 80px
+      background: $stroke
+      position:absolute
+      top: -27px
+      left: 30px
+      transform: rotate(80deg)
+      z-index: 3
+
+    +m('stroke2')
+      width: 10px
+      height: 100px
+      background: $stroke
+      position: absolute
+      top: -44px
+      left: 118px
+      transform: rotate(90deg)
+      z-index: 3
+
+    +m('stroke3')
+      width: 10px
+      height: 100px
+      background: $stroke
+      position: absolute
+      top: -35.5px
+      right: 15px
+      transform: rotate(-80deg)
+      z-index: 3
+
+    +m('outer')
+      position: relative
+  +e('center-jaw-left')
+    width: 100px
+    height: 90px
+    background: $dark-black
+    z-index: 1
+    transform: rotate(-10deg)
+    position: absolute
+    top: 10px
+    left: -15px
+
+  +e('center-jaw-middle')
+    width: 105px
+    height: 90px
+    background: $black
+    position: absolute
+    z-index: 2
+    left: 70px
+    top: 5px
+
+  +e('center-jaw-right')
+    width: 100px
+    height: 90px
+    background: $light-black
+    z-index: 1
+    position: absolute
+    right: 0
+    transform: rotate(10deg)
+    top: 10px
+
+  +e('center')
+    width: 190px
+    height: 210px
+    background: darken(pink, 20%)
+    position: absolute
+    z-index: 2
+    top: 61px
+    left: 45px
+    border-radius: 50% 50% 0 0
+    overflow: hidden
+    border-left: 10px solid $stroke
+    border-right: 10px solid $stroke
+    border-top: 10px solid $stroke
+
+    +m('shadow2')
+      width: 120px
+      height: 400px
+      background: $black
+      border-radius: 50% 50% 0 0
+      position: absolute
+      right: 30px
+      top: -50px
+
+    +m('shadow3')
+      width: 50px
+      height: 400px
+      background: $light-black
+      position: absolute
+      right: 0px
+
+    +m('shadow1')
+      width: 60px
+      height: 400px
+      background: $dark-black
+
+  +e('left-eye')
+    width: 50px
+    height: 50px
+    background-color: $dark-orange
+    position: absolute
+    z-index: 5
+    top: 140px
+    left: 60px
+    border: 10px solid $stroke
+    border-radius: 100%
+    overflow: hidden
+
+  +e('right-eye')
+    width: 50px
+    height: 50px
+    background-color: $dark-orange
+    position: absolute
+    z-index: 5
+    top: 140px
+    right: 60px
+    border: 10px solid $stroke
+    border-radius: 100%
+    overflow: hidden
+
+  +e('eye-fill')
+    width: 100%
+    height: 100%
+    background: $orange
+    position: absolute
+    top: 5px
+    border-radius: 100%
+
+  +e('center-stick')
+    width: 10px
+    height: 150px
+    background: $dark-black
+    border: 10px solid $stroke
+    // border-bottom: 15px solid $stroke
+    border-radius: 0 0 100% 100%
+    +m('outer')
+
+  +e('right-hole')
+    width: 50px
+    height: 50px
+    background: white
+    border-left: 10px solid $stroke
+    border-radius: 100%

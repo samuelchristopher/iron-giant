@@ -1,0 +1,22 @@
+{
+  "name": "iron-giant",
+  "version": "1.0.0",
+  "description": "Designed by [Ryan Prudhomme](https://dribbble.com/rprudhomme), developed by [Samuel Christopher]()",
+  "main": "index.js",
+  "scripts": {
+    "server": "budo ./build/index.html --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelchristopher/iron-giant.git"
+  },
+  "author": "Samuel Christopher <thesamchris@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelchristopher/iron-giant/issues"
+  },
+  "homepage": "https://github.com/samuelchristopher/iron-giant#readme",
+  "dependencies": {
+    "budo": "^7.1.0"
+  }
+}

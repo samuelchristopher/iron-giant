@@ -1,0 +1,38 @@
+// VARIABLES
+$dark-black: #425261
+$black: #5A6D73
+$light-black: #86999F
+$dark-orange: #EF8369
+$orange: #F5CE82
+$stroke: #263138
+
+*
+  font-family: 'Roboto Mono', sans-serif
+
+body
+  background: lighten(blue, 47%)
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100vw
+  height: 100vh
+  margin: 0
+
+.artboard
+  border-radius: 10px
+  background: white
+  width: 70vw
+  height: 80vh
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2)
+  padding: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.flipped
+  transform: scaleX(-1)
+  filter: FlipH
+
+.flippedY
+  transform: scaleX(-1)
+  filter: FlipY
