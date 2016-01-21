@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500);
 * {
-  font-family: 'Roboto Mono', sans-serif; }
+  font-family: 'Roboto Mono', sans-serif;
+  transition: all 500ms ease-in-out; }
 
 body {
   background: #f0f0ff;
@@ -33,7 +34,6 @@ body {
 .iron-giant {
   height: 400px;
   width: 300px;
-  background: pink;
   position: relative; }
   .iron-giant__left-ear, .iron-giant__right-ear {
     background: #425261;
@@ -220,9 +220,60 @@ body {
     background: #425261;
     border: 10px solid #263138;
     border-radius: 0 0 100% 100%; }
-  .iron-giant__right-hole {
+  .iron-giant__circle {
     width: 50px;
     height: 50px;
+    right: -20px;
+    top: -10px;
     background: white;
-    border-left: 10px solid #263138;
-    border-radius: 100%; }
+    position: absolute;
+    border-radius: 100%;
+    border: 10px solid #263138; }
+    .iron-giant__circle--fill {
+      width: 50px;
+      height: 50px;
+      background: white;
+      position: absolute;
+      border-radius: 100%;
+      right: 45px;
+      top: 71px;
+      z-index: 7; }
+  .iron-giant__stick-clipped {
+    -webkit-clip-path: polygon(50% 0%, 55% 9%, 50% 99%, 46% 9%);
+    height: 200px;
+    width: 200px;
+    background: #ff5a77;
+    z-index: 7;
+    position: absolute;
+    transform: scale(0.7); }
+    .iron-giant__stick-clipped--dark {
+      height: 100%;
+      width: 50%;
+      background: #425261;
+      float: left; }
+    .iron-giant__stick-clipped--black {
+      height: 100%;
+      width: 50%;
+      background: #5A6D73;
+      float: right; }
+  .iron-giant__stick {
+    width: 10px;
+    height: 190px;
+    background: coral;
+    border: 10px solid #263138;
+    border-radius: 70% 70% 60% 60%;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    z-index: 7;
+    left: 135px; }
+    .iron-giant__stick--dark {
+      width: 50%;
+      height: 100%;
+      background: #425261;
+      float: left; }
+    .iron-giant__stick--black {
+      width: 50%;
+      height: 100%;
+      background: #5A6D73;
+      float: right; }
