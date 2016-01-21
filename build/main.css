@@ -97,6 +97,22 @@ body {
     border-left: 10px solid #263138;
     border-bottom: 10px solid #263138;
     overflow: hidden; }
+    .iron-giant__center-jaw--seperator1 {
+      height: 100px;
+      width: 10px;
+      background: #263138;
+      position: absolute;
+      z-index: 3;
+      top: 10px;
+      left: 65px; }
+    .iron-giant__center-jaw--seperator3 {
+      height: 100px;
+      width: 10px;
+      background: #263138;
+      position: absolute;
+      z-index: 3;
+      top: 10px;
+      right: 65px; }
     .iron-giant__center-jaw--inner {
       position: relative; }
     .iron-giant__center-jaw--stroke1--fixed {
