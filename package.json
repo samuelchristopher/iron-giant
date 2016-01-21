@@ -18,5 +18,12 @@
   "homepage": "https://github.com/samuelchristopher/iron-giant#readme",
   "dependencies": {
     "budo": "^7.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "jade": "^1.11.0"
   }
 }

@@ -92,15 +92,15 @@
 
     +m('inner')
       position: relative
-    +m('stroke1')
-      width: 10px
-      height: 80px
+    +m('stroke1--fixed')
+      height: 10px
+      width: 100px
       background: $stroke
-      position:absolute
-      top: -27px
-      left: 30px
-      transform: rotate(80deg)
       z-index: 3
+      top: 10px
+      left: -25px
+      position: absolute
+      transform: rotate(-10deg)
 
     +m('stroke2')
       width: 10px

@@ -1,23 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500);
 * {
-  font-family: 'Roboto Mono', sans-serif;
-}
+  font-family: 'Roboto Mono', sans-serif; }
 
 body {
   background: #f0f0ff;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-}
+  margin: 0; }
 
 .artboard {
   border-radius: 10px;
@@ -26,299 +18,211 @@ body {
   height: 80vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+  align-items: center;
+  justify-content: center; }
 
 .flipped {
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-filter: FlipH;
-          filter: FlipH;
-}
+  transform: scaleX(-1);
+  filter: FlipH; }
 
 .flippedY {
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-filter: FlipY;
-          filter: FlipY;
-}
+  transform: scaleX(-1);
+  filter: FlipY; }
 
 .iron-giant {
   height: 400px;
   width: 300px;
   background: pink;
-  position: relative;
-}
-
-.iron-giant__left-ear, .iron-giant__right-ear {
-  background: #425261;
-  width: 10px;
-  height: 30px;
-  position: absolute;
-  bottom: 190px;
-  border-left: 10px solid #263138;
-}
-
-.iron-giant__left-ear--top, .iron-giant__right-ear--top {
-  background: #263138;
-  width: 10px;
-  height: 20px;
-  position: absolute;
-  top: -8px;
-  left: -2px;
-  -webkit-transform: rotate(75deg);
-      -ms-transform: rotate(75deg);
-          transform: rotate(75deg);
-}
-
-.iron-giant__left-ear--bottom, .iron-giant__right-ear--bottom {
-  background: #263138;
-  width: 10px;
-  height: 20px;
-  position: absolute;
-  bottom: -8px;
-  left: -4px;
-  -webkit-transform: rotate(-85deg);
-      -ms-transform: rotate(-85deg);
-          transform: rotate(-85deg);
-}
-
-.iron-giant__left-ear-border-container, .iron-giant__right-ear-border-container {
-  height: 30px;
-  width: 10px;
-  position: relative;
-}
-
-.iron-giant__left-jaw {
-  background: #425261;
-  width: 20px;
-  height: 150px;
-  border-left: 10px solid #263138;
-  border-top: 10px solid #263138;
-  position: absolute;
-  top: 150px;
-  left: 20px;
-}
-
-.iron-giant__left-jaw--black {
-  background: #5A6D73;
-}
-
-.iron-giant__left-jaw--highlight {
-  width: 40%;
-  height: 100%;
-  background: #86999F;
-}
-
-.iron-giant__right-ear {
-  right: 0;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  background: #5A6D73;
-}
-
-.iron-giant__right-ear--highlight {
-  width: 5px;
-  height: 100%;
-  background: #86999F;
-  z-index: 3;
-}
-
-.iron-giant__center-jaw {
-  height: 90px;
-  width: 240px;
-  position: absolute;
-  bottom: 30px;
-  left: 20px;
-  border-radius: 0 0 60px 60px;
-  border-right: 10px solid #263138;
-  border-left: 10px solid #263138;
-  border-bottom: 10px solid #263138;
-  overflow: hidden;
-}
-
-.iron-giant__center-jaw--inner {
-  position: relative;
-}
-
-.iron-giant__center-jaw--stroke1 {
-  width: 10px;
-  height: 80px;
-  background: #263138;
-  position: absolute;
-  top: -27px;
-  left: 30px;
-  -webkit-transform: rotate(80deg);
-      -ms-transform: rotate(80deg);
-          transform: rotate(80deg);
-  z-index: 3;
-}
-
-.iron-giant__center-jaw--stroke2 {
-  width: 10px;
-  height: 100px;
-  background: #263138;
-  position: absolute;
-  top: -44px;
-  left: 118px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  z-index: 3;
-}
-
-.iron-giant__center-jaw--stroke3 {
-  width: 10px;
-  height: 100px;
-  background: #263138;
-  position: absolute;
-  top: -35.5px;
-  right: 15px;
-  -webkit-transform: rotate(-80deg);
-      -ms-transform: rotate(-80deg);
-          transform: rotate(-80deg);
-  z-index: 3;
-}
-
-.iron-giant__center-jaw--outer {
-  position: relative;
-}
-
-.iron-giant__center-jaw-left {
-  width: 100px;
-  height: 90px;
-  background: #425261;
-  z-index: 1;
-  -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  position: absolute;
-  top: 10px;
-  left: -15px;
-}
-
-.iron-giant__center-jaw-middle {
-  width: 105px;
-  height: 90px;
-  background: #5A6D73;
-  position: absolute;
-  z-index: 2;
-  left: 70px;
-  top: 5px;
-}
-
-.iron-giant__center-jaw-right {
-  width: 100px;
-  height: 90px;
-  background: #86999F;
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  -webkit-transform: rotate(10deg);
-      -ms-transform: rotate(10deg);
-          transform: rotate(10deg);
-  top: 10px;
-}
-
-.iron-giant__center {
-  width: 190px;
-  height: 210px;
-  background: #ff5a77;
-  position: absolute;
-  z-index: 2;
-  top: 61px;
-  left: 45px;
-  border-radius: 50% 50% 0 0;
-  overflow: hidden;
-  border-left: 10px solid #263138;
-  border-right: 10px solid #263138;
-  border-top: 10px solid #263138;
-}
-
-.iron-giant__center--shadow2 {
-  width: 120px;
-  height: 400px;
-  background: #5A6D73;
-  border-radius: 50% 50% 0 0;
-  position: absolute;
-  right: 30px;
-  top: -50px;
-}
-
-.iron-giant__center--shadow3 {
-  width: 50px;
-  height: 400px;
-  background: #86999F;
-  position: absolute;
-  right: 0px;
-}
-
-.iron-giant__center--shadow1 {
-  width: 60px;
-  height: 400px;
-  background: #425261;
-}
-
-.iron-giant__left-eye {
-  width: 50px;
-  height: 50px;
-  background-color: #EF8369;
-  position: absolute;
-  z-index: 5;
-  top: 140px;
-  left: 60px;
-  border: 10px solid #263138;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.iron-giant__right-eye {
-  width: 50px;
-  height: 50px;
-  background-color: #EF8369;
-  position: absolute;
-  z-index: 5;
-  top: 140px;
-  right: 60px;
-  border: 10px solid #263138;
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.iron-giant__eye-fill {
-  width: 100%;
-  height: 100%;
-  background: #F5CE82;
-  position: absolute;
-  top: 5px;
-  border-radius: 100%;
-}
-
-.iron-giant__center-stick {
-  width: 10px;
-  height: 150px;
-  background: #425261;
-  border: 10px solid #263138;
-  border-radius: 0 0 100% 100%;
-}
-
-.iron-giant__right-hole {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-left: 10px solid #263138;
-  border-radius: 100%;
-}
-
-/*# sourceMappingURL=main.css.map */
+  position: relative; }
+  .iron-giant__left-ear, .iron-giant__right-ear {
+    background: #425261;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    bottom: 190px;
+    border-left: 10px solid #263138; }
+    .iron-giant__left-ear--top, .iron-giant__right-ear--top {
+      background: #263138;
+      width: 10px;
+      height: 20px;
+      position: absolute;
+      top: -8px;
+      left: -2px;
+      transform: rotate(75deg); }
+    .iron-giant__left-ear--bottom, .iron-giant__right-ear--bottom {
+      background: #263138;
+      width: 10px;
+      height: 20px;
+      position: absolute;
+      bottom: -8px;
+      left: -4px;
+      transform: rotate(-85deg); }
+  .iron-giant__left-ear-border-container, .iron-giant__right-ear-border-container {
+    height: 30px;
+    width: 10px;
+    position: relative; }
+  .iron-giant__left-jaw {
+    background: #425261;
+    width: 20px;
+    height: 150px;
+    border-left: 10px solid #263138;
+    border-top: 10px solid #263138;
+    position: absolute;
+    top: 150px;
+    left: 20px; }
+    .iron-giant__left-jaw--black {
+      background: #5A6D73; }
+    .iron-giant__left-jaw--highlight {
+      width: 40%;
+      height: 100%;
+      background: #86999F; }
+  .iron-giant__right-ear {
+    right: 0;
+    transform: rotate(180deg);
+    background: #5A6D73; }
+    .iron-giant__right-ear--highlight {
+      width: 5px;
+      height: 100%;
+      background: #86999F;
+      z-index: 3; }
+  .iron-giant__center-jaw {
+    height: 90px;
+    width: 240px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border-radius: 0 0 60px 60px;
+    border-right: 10px solid #263138;
+    border-left: 10px solid #263138;
+    border-bottom: 10px solid #263138;
+    overflow: hidden; }
+    .iron-giant__center-jaw--inner {
+      position: relative; }
+    .iron-giant__center-jaw--stroke1--fixed {
+      height: 10px;
+      width: 100px;
+      background: #263138;
+      z-index: 3;
+      top: 10px;
+      left: -25px;
+      position: absolute;
+      transform: rotate(-10deg); }
+    .iron-giant__center-jaw--stroke2 {
+      width: 10px;
+      height: 100px;
+      background: #263138;
+      position: absolute;
+      top: -44px;
+      left: 118px;
+      transform: rotate(90deg);
+      z-index: 3; }
+    .iron-giant__center-jaw--stroke3 {
+      width: 10px;
+      height: 100px;
+      background: #263138;
+      position: absolute;
+      top: -35.5px;
+      right: 15px;
+      transform: rotate(-80deg);
+      z-index: 3; }
+    .iron-giant__center-jaw--outer {
+      position: relative; }
+  .iron-giant__center-jaw-left {
+    width: 100px;
+    height: 90px;
+    background: #425261;
+    z-index: 1;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 10px;
+    left: -15px; }
+  .iron-giant__center-jaw-middle {
+    width: 105px;
+    height: 90px;
+    background: #5A6D73;
+    position: absolute;
+    z-index: 2;
+    left: 70px;
+    top: 5px; }
+  .iron-giant__center-jaw-right {
+    width: 100px;
+    height: 90px;
+    background: #86999F;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    transform: rotate(10deg);
+    top: 10px; }
+  .iron-giant__center {
+    width: 190px;
+    height: 210px;
+    background: #ff5a77;
+    position: absolute;
+    z-index: 2;
+    top: 61px;
+    left: 45px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+    border-left: 10px solid #263138;
+    border-right: 10px solid #263138;
+    border-top: 10px solid #263138; }
+    .iron-giant__center--shadow2 {
+      width: 120px;
+      height: 400px;
+      background: #5A6D73;
+      border-radius: 50% 50% 0 0;
+      position: absolute;
+      right: 30px;
+      top: -50px; }
+    .iron-giant__center--shadow3 {
+      width: 50px;
+      height: 400px;
+      background: #86999F;
+      position: absolute;
+      right: 0px; }
+    .iron-giant__center--shadow1 {
+      width: 60px;
+      height: 400px;
+      background: #425261; }
+  .iron-giant__left-eye {
+    width: 50px;
+    height: 50px;
+    background-color: #EF8369;
+    position: absolute;
+    z-index: 5;
+    top: 140px;
+    left: 60px;
+    border: 10px solid #263138;
+    border-radius: 100%;
+    overflow: hidden; }
+  .iron-giant__right-eye {
+    width: 50px;
+    height: 50px;
+    background-color: #EF8369;
+    position: absolute;
+    z-index: 5;
+    top: 140px;
+    right: 60px;
+    border: 10px solid #263138;
+    border-radius: 100%;
+    overflow: hidden; }
+  .iron-giant__eye-fill {
+    width: 100%;
+    height: 100%;
+    background: #F5CE82;
+    position: absolute;
+    top: 5px;
+    border-radius: 100%; }
+  .iron-giant__center-stick {
+    width: 10px;
+    height: 150px;
+    background: #425261;
+    border: 10px solid #263138;
+    border-radius: 0 0 100% 100%; }
+  .iron-giant__right-hole {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-left: 10px solid #263138;
+    border-radius: 100%; }
